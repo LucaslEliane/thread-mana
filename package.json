@@ -1,0 +1,24 @@
+{
+  "name": "thread-mana",
+  "version": "0.0.1",
+  "description": "A node.js thread manager with new api: worker_threads",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaslEliane/thread-mana.git"
+  },
+  "keywords": [
+    "thread",
+    "node.js",
+    "manager"
+  ],
+  "author": "lucasleliane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucaslEliane/thread-mana/issues"
+  },
+  "homepage": "https://github.com/LucaslEliane/thread-mana#readme"
+}
