@@ -6,6 +6,20 @@ const getValues = (obj, selector) => {
     });
 }
 
+const isType = (obj, type) => {
+    return Object.prototype.toString.call(obj) === type;
+}
+
+const iteratorWithTimes = (times, iterator) => {
+    let i = 0;
+    while(i < times) {
+        iterator();
+        i++;
+    }
+}
+
 module.exports = {
     getValues,
+    isType,
+    iteratorWithTimes
 }

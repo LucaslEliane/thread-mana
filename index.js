@@ -13,7 +13,6 @@ const PRIORITY_DEFER = process.nextTick;
 const BEHIND_DEFER = setImmediate;
 
 
-
 class Cluster extends EventEmitter {
     constructor(options = {}) {
         super();
@@ -29,7 +28,19 @@ class Cluster extends EventEmitter {
             return;
         }
 
+        this._forkWorker(this._workers);
+    }
 
+    _forkWorker(workers) {
+        workers.forEach(worker => {
+            Utils.iteratorWithTimes(worker['core'], () => {
+                this._registerEvent(worker);
+            })
+        })
+    }
+
+    _registerEvent(worker) {
+        console.log(worker)
     }
 
     _resolveTasks(tasks) {
@@ -41,20 +52,44 @@ class Cluster extends EventEmitter {
         }
 
         const workers = new Map();
+        let countCore = 0;
 
         Object.keys(validTasks).forEach(key => {
+            const callback = validTasks[key]['callback'];
+            const core = validTasks[key]['core'] || 1;
+            countCore += core;
+
             workers.set(key, {
-                ...validTasks[key]
+                ...validTasks[key],
+                callback: 
+                    callback && 
+                    Utils.isType(callback, '[object Function]') ?
+                    callback : 
+                    () => {
+                        console.log(`[Thread] Tasks (${key}) executed!`);
+                    },
+                core,
             });
         });
+
+        return this._justifyThreads(workers, countCore, this._count);
+    }
+
+    _justifyThreads(workers, countCore, maxCore) {
+        let average = maxCore / countCore;
+
+        for (let [key, worker] of workers) {
+            worker['core'] = Math.ceil(worker['core'] * average);
+        }
 
         return workers;
     }
 
     _checkFiles(tasks) {
-        const files = Utils.getValues(tasks, (obj) => obj.file);
-
-        return files.filter(file => this._fileExists(file));
+        return Object.values(tasks)
+            .filter(task => 
+                this._fileExists(task['file'])
+            );
     }
 
     _fileExists(file) {

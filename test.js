@@ -4,11 +4,15 @@ const path = require('path');
 const cluster = new Cluster({
     tasks: {
         app: {
-            file: path.join(__dirname, 'app.js')
+            file: path.join(__dirname, 'app.js'),
+            core: 4
         },
         agent: {
-            file: './agent.js'
+            file: './agent.js',
+            core: 4
         }
     }
 });
+
+cluster.setup();
 
