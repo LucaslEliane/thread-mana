@@ -14,6 +14,13 @@ class FileNotExistError extends SimpleError {
     }
 }
 
+class ThreadError extends SimpleError {
+    constructor(message) {
+        super('ThreadError', message);
+    }
+}
+
 module.exports = {
     FileNotExistError,
+    ThreadError,
 };

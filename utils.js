@@ -13,7 +13,7 @@ const isType = (obj, type) => {
 const iteratorWithTimes = (times, iterator) => {
     let i = 0;
     while(i < times) {
-        iterator();
+        iterator(i);
         i++;
     }
 }

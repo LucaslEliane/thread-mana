@@ -32,15 +32,42 @@ class Cluster extends EventEmitter {
     }
 
     _forkWorker(workers) {
-        workers.forEach(worker => {
-            Utils.iteratorWithTimes(worker['core'], () => {
-                this._registerEvent(worker);
-            })
-        })
+        for (let [key, worker] of workers) {
+            Utils.iteratorWithTimes(worker['core'], (times) => {
+                worker.threads && Array.isArray(worker.threads) ? 
+                    worker.threads.push(this._registerEvent(worker, times, key)) :
+                    [this._registerEvent(worker, times, key)];
+            });
+        }
     }
 
-    _registerEvent(worker) {
-        console.log(worker)
+    _registerEvent(worker, times, key) {
+        const thread = new Worker(worker.file);
+        const { callback } = worker;
+
+        thread.on('online', () => {
+            console.log(
+                '-------------------\n' +
+                `[Thread] ${key}(${times}) is Online`
+            );
+        });
+
+        thread.on('error', (err) => {
+            callback(err);
+        });
+
+        thread.on('message', (message) => {
+            callback(null, message);
+        });
+
+        thread.on('exit', exitCode => {
+            console.log(
+                '----------------------------------------------\n' +
+                `[Thread] is Exited with ExitCode: ${exitCode}`
+            );
+        });
+
+        return thread;
     }
 
     _resolveTasks(tasks) {
@@ -54,19 +81,33 @@ class Cluster extends EventEmitter {
         const workers = new Map();
         let countCore = 0;
 
-        Object.keys(validTasks).forEach(key => {
-            const callback = validTasks[key]['callback'];
-            const core = validTasks[key]['core'] || 1;
+        validTasks.forEach(task => {
+            let [ key, options ] = task;
+
+            const callback = options['callback'];
+            const core = options['core'] || 1;
             countCore += core;
 
             workers.set(key, {
-                ...validTasks[key],
+                ...options,
                 callback: 
                     callback && 
                     Utils.isType(callback, '[object Function]') ?
                     callback : 
-                    () => {
-                        console.log(`[Thread] Tasks (${key}) executed!`);
+                    (err, message) => {
+                        if (err) {
+                            console.error(
+                                '======================================\n' +
+                                `[Thread] Tasks (${key}) Got an Error\n`,
+                                new CustomError.ThreadError(),
+                            );
+                            return false;
+                        }
+                        console.log(
+                            `[Thread] Tasks (${key}) Got a Message` +
+                            '=====================================' +
+                            `Tasks (${key}) Got Message: ${message}`
+                        );
                     },
                 core,
             });
@@ -86,9 +127,9 @@ class Cluster extends EventEmitter {
     }
 
     _checkFiles(tasks) {
-        return Object.values(tasks)
-            .filter(task => 
-                this._fileExists(task['file'])
+        return Object.entries(tasks)
+            .filter(([key, value]) => 
+                this._fileExists(tasks[key]['file']) && ( tasks[key]['key'] = key )
             );
     }
 
