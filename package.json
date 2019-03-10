@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/LucaslEliane/thread-mana/issues"
   },
-  "homepage": "https://github.com/LucaslEliane/thread-mana#readme"
+  "homepage": "https://github.com/LucaslEliane/thread-mana#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
