@@ -1,4 +1,4 @@
-const Cluster = require('./index');
+const Cluster = require('../lib/index');
 const path = require('path');
 
 const cluster = Cluster.initCluster({
