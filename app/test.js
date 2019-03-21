@@ -4,12 +4,17 @@ const path = require('path');
 const cluster = Cluster.initCluster({
     maxThreads: 4,
     logDir: path.resolve(__dirname, 'log'),
-    inspectionCycle: 500,
+    inspectionCycle: 2000,
     env: 'prod',
 });
 
 cluster.setupWorker(
-    path.resolve(__dirname, './listen.js')
+    path.resolve(__dirname, './listen.js'),
+    (err, resolve, c) => {
+        if (!err) {
+            console.log(resolve);
+        }
+    }
 );
 
 cluster.setupWorker(
@@ -19,7 +24,3 @@ cluster.setupWorker(
 cluster.setupWorker(
     path.resolve(__dirname, './err.js')
 )
-
-setTimeout(() => {
-    cluster.close()
-}, 2000);

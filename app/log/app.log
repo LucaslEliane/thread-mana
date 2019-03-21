@@ -560,3 +560,231 @@ Error: this is app error
 [Thread Mana](2019-03-21T07:41:23.007Z): info - cluster is ready to exit.
 [Thread Mana](2019-03-21T07:41:23.008Z): info - Thread Pool have provided service for:	a few seconds
 [Thread Mana](2019-03-21T07:41:23.011Z): info - thread /Users/luxin/Develop/github/thread-mana/app/listen.js ( threadId: 1 ) exit with code 1
+[Thread Mana](2019-03-21T07:49:09.116Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:49:09.121Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:49:09.122Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:49:11.047Z): info - cluster is ready to exit.
+[Thread Mana](2019-03-21T07:49:11.048Z): info - Thread Pool have provided service for:	a few seconds
+[Thread Mana](2019-03-21T07:49:11.050Z): info - thread /Users/luxin/Develop/github/thread-mana/app/listen.js ( threadId: 1 ) exit with code 1
+[Thread Mana](2019-03-21T07:49:19.741Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:49:19.745Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:49:19.746Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:50:11.033Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:50:11.037Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:50:11.039Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:51:16.563Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:51:16.567Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:51:16.570Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:51:29.546Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:51:29.550Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:51:29.552Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:52:05.898Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:52:05.902Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:52:05.905Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:53:06.751Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:53:06.756Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:53:06.756Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:53:28.770Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T07:53:28.774Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:53:28.775Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:54:01.019Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T07:54:01.025Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T07:54:01.027Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:24:27.461Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:24:27.465Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:24:27.467Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:28:04.675Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:28:04.679Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:28:04.680Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:28:41.353Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:28:41.357Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:28:41.359Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:33:58.853Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:33:58.860Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:33:58.862Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:34:43.125Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:34:43.129Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:34:43.131Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:35:03.061Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:35:03.075Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:35:03.076Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:36:24.765Z): info - thread /Users/luxin/Develop/github/thread-mana/app/normal.js ( threadId: 2 ) exit with code 0
+[Thread Mana](2019-03-21T08:36:24.768Z): error - child thread error: 
+Error: this is app error
+    at Object.<anonymous> (/Users/luxin/Develop/github/thread-mana/app/err.js:3:7)
+    at Module._compile (internal/modules/cjs/loader.js:738:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:749:10)
+    at Module.load (internal/modules/cjs/loader.js:630:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:570:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:801:12)
+    at MessagePort.port.on (internal/main/worker_thread.js:96:25)
+    at MessagePort.emit (events.js:197:13)
+    at MessagePort.onmessage (internal/worker/io.js:68:8)
+[Thread Mana](2019-03-21T08:36:24.769Z): info - thread /Users/luxin/Develop/github/thread-mana/app/err.js ( threadId: 3 ) exit with code 1
+[Thread Mana](2019-03-21T08:36:34.709Z): info - thread /Users/luxin/Develop/github/thread-mana/app/listen.js ( threadId: 1 ) exit with code 1
