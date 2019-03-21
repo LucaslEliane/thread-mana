@@ -24,3 +24,12 @@ cluster.setupWorker(
 cluster.setupWorker(
     path.resolve(__dirname, './err.js')
 )
+
+setTimeout(() => cluster.setupWorker(
+    path.resolve(__dirname, './listen.js'),
+    (err, resolve, c) => {
+        if (!err) {
+            console.log(resolve);
+        }
+    }
+), 10000);
