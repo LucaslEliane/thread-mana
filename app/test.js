@@ -18,7 +18,10 @@ cluster.setupWorker(
 );
 
 cluster.setupWorker(
-    path.resolve(__dirname, './normal.js')
+    path.resolve(__dirname, './normal.js'),
+    name => {
+        console.log(`in main thread : ${name}`);
+    }
 )
 
 cluster.setupWorker(
